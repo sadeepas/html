@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Sign Up Form</title>
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		input[type=text], input[type=password] {
+			padding: 10px;
+			margin: 10px;
+			border-radius: 5px;
+			border: none;
+			box-shadow: 1px 1px 1px grey;
+			width: 100%;
+		}
+		input[type=submit] {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border-radius: 5px;
+			border: none;
+			cursor: pointer;
+		}
+		input[type=submit]:hover {
+			background-color: #45a049;
+		}
+        .oauth {
+            display:flex;
+            justify-content:center;
+            margin-top:20px;
+        }
+        .oauth img{
+            width:30px;
+            height:auto;
+            margin-right:10px;
+        }
+        .oauth a{
+            text-decoration:none;
+            color:black;
+            font-size:14px;
+        }
+        .oauth a:hover{
+            text-decoration:none;
+            color:#4CAF50;;
+        }
+	</style>
+</head>
+<body>
+    <h1>Login and Sign Up Form</h1>
+    <form action="#" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Your username.." required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Your password.." required>
+
+        <input type="submit" value="Login">
+    </form>
+
+    <div class="oauth">
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/google-logo.png"/>Google</a>
+        <a href="#"><img src="https://img.icons8.com/fluent/48/000000/github.png"/>GitHub</a>
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/microsoft.png"/>Microsoft Account</a>
+        <a href="#"><img src="https://img.icons8.com/color/48/000000/google-logo.png"/>Google Account</a>
+    </div>
+
+</body>
+</html>
